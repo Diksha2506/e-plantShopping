@@ -41,7 +41,7 @@ function App() {
     <div className="app-root">
       {/* 1. Landing Page View */}
       {currentView === 'landing' && (
-        <div className="landing-page">
+        <div className="landing-page background-image">
           <div className="landing-card">
             <div className="landing-brand">
               <div className="landing-brand-icon">
@@ -50,7 +50,7 @@ function App() {
               <span>Boutique Botanical Haven</span>
             </div>
 
-            <h1 className="landing-title">Paradise Nursery</h1>
+            <h1 className="landing-title">Welcome to Paradise Nursery</h1>
             <div className="landing-divider"></div>
 
             <p className="landing-description">

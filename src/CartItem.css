@@ -214,6 +214,7 @@
   color: #0f172a;
 }
 
+.cart-item-delete,
 .delete-item-btn {
   background: transparent;
   border: none;
@@ -229,6 +230,7 @@
   transition: all 0.2s ease;
 }
 
+.cart-item-delete:hover,
 .delete-item-btn:hover {
   background: #fee2e2;
   color: #dc2626;

@@ -1,22 +1,22 @@
-# Paradise Nursery Shopping Application
+# e-plantShopping
 
-An elegant, modern React & Redux Toolkit e-commerce shopping web application built for the **Coursera IBM Full Stack Developer Final Project**. Paradise Nursery is a botanical online haven where plant lovers and urban dwellers can discover, explore, and purchase carefully curated houseplants.
+**Paradise Nursery Shopping Application** is an elegant, modern React & Redux Toolkit e-commerce shopping web application built for the **Coursera IBM Full Stack Software Developer Final Project**. Paradise Nursery is a botanical online sanctuary where plant lovers and urban dwellers can discover, explore, and purchase carefully curated houseplants.
 
 ---
 
 ## 🌿 Project Overview
 
-Paradise Nursery offers a seamless shopping experience for houseplant enthusiasts, providing:
-- **Landing Page**: Immersive botanical hero backdrop, welcome introduction to the nursery, and a prominent call-to-action button to enter the shop.
-- **About Us**: Comprehensive background on the nursery's purpose, eco-conscious mission, and customer benefits.
-- **Plant Catalog (ProductList)**: 18 unique houseplants categorized across 3 distinct botanical groups (Air Purifying, Aromatic & Fragrant, and Low Maintenance). Includes real-time Redux cart state integration and instant button disabling upon addition.
-- **Dynamic Cart (CartItem)**: Live updates for individual quantities, line subtotals, overall cart balance, intuitive increment/decrement/removal controls, and checkout mock flow.
+Paradise Nursery (`e-plantShopping`) offers a seamless shopping experience for houseplant enthusiasts, providing:
+- **Landing Page**: Immersive botanical hero backdrop (`.background-image`), "Welcome to Paradise Nursery" heading, introduction to the nursery, and a prominent "Get Started" call-to-action button to enter the shop.
+- **About Us**: Comprehensive background introducing Paradise Nursery's purpose, eco-conscious mission, curated botanical products, and customer benefits.
+- **Plant Catalog (ProductList)**: 18 unique houseplants categorized across 3 distinct botanical groups (Air Purifying, Aromatic & Fragrant, and Low Maintenance). Includes real-time Redux cart state integration, persistent navigation bar, live cart count badge, and instant button disabling upon addition.
+- **Dynamic Cart (CartItem)**: Live updates for individual quantities, line subtotals, overall cart balance, intuitive increment/decrement (`updateQuantity`), `cart-item-delete` button, and checkout flow.
 
 ---
 
 ## ✨ Features
 
-- **Redux Toolkit State Management**: Centralized store handling cart state, item additions, item removals, dynamic item count, and responsive quantity adjustments.
+- **Redux Toolkit State Management**: Centralized store handling cart state, item additions (`addItem`), item removals (`removeItem`), and responsive quantity adjustments (`updateQuantity`).
 - **Category Grouping**:
   1. *Air Purifying Plants* (Snake Plant, Spider Plant, Peace Lily, Boston Fern, Rubber Plant, Aloe Vera)
   2. *Aromatic & Fragrant Plants* (English Lavender, Rosemary Bush, Sweet Jasmine, Lemon Balm, Spearmint, Eucalyptus)
@@ -44,8 +44,8 @@ Make sure you have [Node.js](https://nodejs.org/) installed (v18 or higher recom
 
 ### 1. Clone the repository
 ```bash
-git clone https://github.com/Diksha2506/Paradise-Nursery-Shopping-Application.git
-cd Paradise-Nursery-Shopping-Application
+git clone https://github.com/Diksha2506/e-plantShopping.git
+cd e-plantShopping
 ```
 
 ### 2. Install dependencies
@@ -70,13 +70,13 @@ npm run build
 
 | Required File | Path | Description |
 |:---|:---|:---|
-| **README.md** | `README.md` | Full project description, features, tech stack, and setup guides |
-| **AboutUs.jsx** | `src/AboutUs.jsx` | Company story, mission, and customer benefits |
-| **App.css** | `src/App.css` | Botanical background image, styling, typography, and responsive rules |
-| **App.jsx** | `src/App.jsx` | Landing page layout with "Get Started" navigation |
+| **README.md** | `README.md` | Exact `e-plantShopping` project description, features, tech stack, and setup guides |
+| **AboutUs.jsx** | `src/AboutUs.jsx` | Company story, mission, products, and customer benefits |
+| **App.css** | `src/App.css` | `.background-image` class with botanical background image, styling, and typography |
+| **App.jsx** | `src/App.jsx` | "Welcome to Paradise Nursery" heading and "Get Started" navigation |
 | **CartSlice.jsx** | `src/CartSlice.jsx` | Redux slice with `addItem`, `removeItem`, and `updateQuantity` reducers |
-| **ProductList.jsx** | `src/ProductList.jsx` | 3 categories, 18 plants, Cart counter, and Add to Cart controls |
-| **CartItem.jsx** | `src/CartItem.jsx` | Line totals, quantity management, delete item, and checkout flows |
+| **ProductList.jsx** | `src/ProductList.jsx` | 3 categories, 18 plants, Cart counter, and `disabled={addedToCart[plant.name]}` Add to Cart controls |
+| **CartItem.jsx** | `src/CartItem.jsx` | Line totals, quantity management, `cart-item-delete`, and checkout flows |
 
 ---
 

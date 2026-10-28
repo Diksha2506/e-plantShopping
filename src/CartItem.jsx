@@ -166,7 +166,7 @@ function CartItem({ onContinueShopping, onNavigateToHome, onNavigateToAbout }) {
                       </div>
 
                       <button 
-                        className="delete-item-btn"
+                        className="cart-item-delete"
                         onClick={() => handleRemove(item)}
                         aria-label={`Remove ${item.name} from cart`}
                       >
